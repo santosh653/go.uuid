@@ -33,6 +33,9 @@ go:
 matrix:
     allow_failures:
         - go: tip
+          arch: amd64
+        - go: tip
+          arch: ppc64le
     fast_finish: true
 before_install:
     - go get github.com/mattn/goveralls
